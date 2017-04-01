@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "King Tut.Plugins", "King Tut.Plugins.csproj", "{192DD4BA-DC90-97FD-7ADB-B99180714EB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "King Tut", "King Tut.csproj", "{083C9DDC-C48C-0E2D-BCB5-6FF1D4562D6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "King Tut.Editor.Plugins", "King Tut.Editor.Plugins.csproj", "{FAB593A0-EC7B-95C7-7A11-ABFD24F671F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{192DD4BA-DC90-97FD-7ADB-B99180714EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{192DD4BA-DC90-97FD-7ADB-B99180714EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{192DD4BA-DC90-97FD-7ADB-B99180714EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{192DD4BA-DC90-97FD-7ADB-B99180714EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{083C9DDC-C48C-0E2D-BCB5-6FF1D4562D6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{083C9DDC-C48C-0E2D-BCB5-6FF1D4562D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{083C9DDC-C48C-0E2D-BCB5-6FF1D4562D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{083C9DDC-C48C-0E2D-BCB5-6FF1D4562D6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAB593A0-EC7B-95C7-7A11-ABFD24F671F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB593A0-EC7B-95C7-7A11-ABFD24F671F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB593A0-EC7B-95C7-7A11-ABFD24F671F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB593A0-EC7B-95C7-7A11-ABFD24F671F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
