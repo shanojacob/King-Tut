@@ -3,11 +3,12 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CollectObject.js">
     <Files>
       <File FileName="Assets\Scripts\PickupableObject.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Pickup.js" Line="37" Column="48" />
+      <File FileName="Assets\Scripts\Pickup.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Pickupable.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CursorScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\EnemyScript.js" Line="45" Column="4" />
+      <File FileName="Assets\Scripts\EnemyScript.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CollectObject.js" Line="14" Column="70" />
+      <File FileName="Assets\torch\readme.txt" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
