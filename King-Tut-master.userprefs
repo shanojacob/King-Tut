@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="King-Tut-master.Plugins.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Scripts\CursorScript.cs">
+    <Files>
+      <File FileName="Assets\Standard Assets\Scripts\CursorScript.cs" Line="400" Column="68" />
+      <File FileName="Assets\JSScript\EnemyScript.js" Line="20" Column="20" />
+      <File FileName="..\..\King Tut\Assets\Standard Assets\Scripts\CursorScript.cs" Line="381" Column="33" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
