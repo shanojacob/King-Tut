@@ -73,6 +73,9 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="Assembly-UnityScript-firstpass">
+      <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="King Tut.Plugins.csproj">
@@ -89,9 +92,6 @@
     <Compile Include="Assets\Mummy\C#\Spear_Shield.cs" />
     <Compile Include="Assets\Mummy\C#\Sword_Shield.cs" />
     <Compile Include="Assets\Mummy\C#\Weaponless.cs" />
-    <Compile Include="Assets\Scripts\CursorScript.cs" />
-    <Compile Include="Assets\Scripts\Pickupable.cs" />
-    <Compile Include="Assets\Scripts\PickupableObject.cs" />
     <Compile Include="Assets\torch\scene\script\TorchSlider.cs" />
     <Compile Include="Assets\torch\scene\script\Torchslider2.cs" />
     <Compile Include="Assets\torch\scripts\Torchelight.cs" />

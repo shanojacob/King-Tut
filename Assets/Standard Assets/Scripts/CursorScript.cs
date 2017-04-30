@@ -13,6 +13,8 @@ public class CursorScript : MonoBehaviour
 	public Light TimerLight;
 	public AudioSource beepAudio;
 	public AudioClip beep;
+	public AudioClip success;
+	public AudioClip failure;
 	public int bPlayed = 0;
 	public Quaternion MainDoorRotation;
 	public Quaternion AntechamberDoorRotation;
@@ -234,7 +236,7 @@ public class CursorScript : MonoBehaviour
 			TimerStart();
 			TimerLight.intensity -= Time.deltaTime * 0.003f;
 			// Play Beep sound
-			if ((int)TimeLeft < 9 && bPlayed == 0) {
+			if ((int)TimeLeft < 8 && bPlayed == 0) {
 				beepAudio.clip = beep;
 				beepAudio.Play ();
 				bPlayed = 1; 
@@ -247,7 +249,7 @@ public class CursorScript : MonoBehaviour
 			TimerStart();
 			TimerLight.intensity -= Time.deltaTime * 0.004f;
 			// Play Beep sound
-			if ((int)TimeLeft < 9 && bPlayed == 0) {
+			if ((int)TimeLeft < 8 && bPlayed == 0) {
 				beepAudio.clip = beep;
 				beepAudio.Play ();
 				bPlayed = 1; 
@@ -260,7 +262,7 @@ public class CursorScript : MonoBehaviour
 			TimerStart();
 			TimerLight.intensity -= Time.deltaTime * 0.005f;
 			// Play Beep sound
-			if ((int)TimeLeft < 9 && bPlayed == 0) {
+			if ((int)TimeLeft < 8 && bPlayed == 0) {
 				beepAudio.clip = beep;
 				beepAudio.Play ();
 				bPlayed = 1; 
@@ -273,7 +275,7 @@ public class CursorScript : MonoBehaviour
 			TimerStart();
 			TimerLight.intensity -= Time.deltaTime * 0.008f;
 			// Play Beep sound
-			if ((int)TimeLeft < 9 && bPlayed == 0) {
+			if ((int)TimeLeft < 8 && bPlayed == 0) {
 				beepAudio.clip = beep;
 				beepAudio.Play ();
 				bPlayed = 1; 
@@ -286,7 +288,7 @@ public class CursorScript : MonoBehaviour
 			TimerStart();
 			TimerLight.intensity -= Time.deltaTime * 0.01f;
 			// Play Beep sound
-			if ((int)TimeLeft < 9 && bPlayed == 0) {
+			if ((int)TimeLeft < 8 && bPlayed == 0) {
 				beepAudio.clip = beep;
 				beepAudio.Play ();
 				bPlayed = 1; 
@@ -313,6 +315,10 @@ public class CursorScript : MonoBehaviour
 			GameObject.Find("Grandfather").GetComponent<UnityEngine.UI.Image> ().color = Color.green;
 			GameObject.Find("Direction").GetComponentInChildren<Text>().text = "Collect the Sword!";
 
+			//Play success sound
+			beepAudio.clip = success;
+			beepAudio.Play ();
+
 		} else if (QuizNo == 2 && GameObject.Find ("Q1O4").GetComponent<Toggle> ().isOn == true && GameObject.Find ("Q2O2").GetComponent<Toggle> ().isOn == true && GameObject.Find ("Q3O1").GetComponent<Toggle> ().isOn == true) {
 			cgQuiz.alpha = 0;
 
@@ -331,6 +337,10 @@ public class CursorScript : MonoBehaviour
 			//Highlight level in family tree and give next direction
 			GameObject.Find("Grandmother").GetComponent<UnityEngine.UI.Image> ().color = Color.green;
 			GameObject.Find("Direction").GetComponentInChildren<Text>().text = "Collect all four canopic jars!";
+
+			//Play success sound
+			beepAudio.clip = success;
+			beepAudio.Play ();
 		} else if (QuizNo == 3 && GameObject.Find ("Q1O4").GetComponent<Toggle> ().isOn == true && GameObject.Find ("Q2O1").GetComponent<Toggle> ().isOn == true && GameObject.Find ("Q3O1").GetComponent<Toggle> ().isOn == true) {
 			cgQuiz.alpha = 0;
 
@@ -352,6 +362,10 @@ public class CursorScript : MonoBehaviour
 			//Highlight level in family tree and give next direction
 			GameObject.Find("Father").GetComponent<UnityEngine.UI.Image> ().color = Color.green;
 			GameObject.Find("Direction").GetComponentInChildren<Text>().text = "Collect the Book of the Dead!";
+
+			//Play success sound
+			beepAudio.clip = success;
+			beepAudio.Play ();
 		} else if (QuizNo == 4 && GameObject.Find ("Q1O3").GetComponent<Toggle> ().isOn == true && GameObject.Find ("Q2O3").GetComponent<Toggle> ().isOn == true && GameObject.Find ("Q3O3").GetComponent<Toggle> ().isOn == true) {
 			cgQuiz.alpha = 0;
 
@@ -370,6 +384,10 @@ public class CursorScript : MonoBehaviour
 			//Highlight level in family tree and give next direction
 			GameObject.Find("Mother").GetComponent<UnityEngine.UI.Image> ().color = Color.green;
 			GameObject.Find("Direction").GetComponentInChildren<Text>().text = "Collect Colonel Cody!";
+
+			//Play success sound
+			beepAudio.clip = success;
+			beepAudio.Play ();
 		} else if (QuizNo == 5 && GameObject.Find ("Q1O1").GetComponent<Toggle> ().isOn == true && GameObject.Find ("Q2O2").GetComponent<Toggle> ().isOn == true && GameObject.Find ("Q3O4").GetComponent<Toggle> ().isOn == true) {
 			cgQuiz.alpha = 0;
 
@@ -388,6 +406,10 @@ public class CursorScript : MonoBehaviour
 			//Highlight level in family tree and give next direction
 			GameObject.Find("Tut").GetComponent<UnityEngine.UI.Image> ().color = Color.green;
 			GameObject.Find("Direction").GetComponentInChildren<Text>().text = "Collect the God to complete the game!";
+
+			//Play success sound
+			beepAudio.clip = success;
+			beepAudio.Play ();
 		} else if (QuizNo == 6 && GameObject.Find ("Q1O2").GetComponent<Toggle> ().isOn == true && GameObject.Find ("Q2O3").GetComponent<Toggle> ().isOn == true && GameObject.Find ("Q3O2").GetComponent<Toggle> ().isOn == true) {
 			cgQuiz.alpha = 0;
 			GameObject.Find ("SuccessMessage").GetComponent<UnityEngine.UI.Image> ().color = Color.green;
@@ -403,6 +425,10 @@ public class CursorScript : MonoBehaviour
 			//Highlight level in family tree and give next direction
 			//GameObject.Find("Tut").GetComponent<UnityEngine.UI.Image> ().color = Color.green;
 			GameObject.Find("Direction").GetComponentInChildren<Text>().text = "Congratulations!!!";
+
+			//Play success sound
+			beepAudio.clip = success;
+			beepAudio.Play ();
 		} else {
 			GameObject.Find ("SuccessMessage").GetComponent<UnityEngine.UI.Image> ().color = Color.red;
 			GameObject.Find ("SuccessMessage").GetComponentInChildren<Text> ().text = "Some of your answers are wrong, please try again!!!";

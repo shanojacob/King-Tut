@@ -16,6 +16,8 @@ import UnityEngine.SceneManagement;
  var AnnexDoorRotation: Quaternion;
  var BurialChamberDoorRotation: Quaternion;
  var TreasuryDoorRotation: Quaternion;
+ var beepAudio: AudioSource ;
+ var failure: AudioClip;
  
  function Start () 
  {
@@ -48,6 +50,9 @@ import UnityEngine.SceneManagement;
     GameObject.Find ("Quiz").GetComponent.<CanvasGroup>().alpha = 0;
     GameObject.Find ("SuccessMessage").GetComponent.<CanvasGroup>().alpha = 0;
     GameObject.Find("KillMessage").GetComponent.<CanvasGroup>().alpha = 1;
+    //Play failure sound
+    beepAudio.clip = failure;
+	beepAudio.Play ();
   	// Restart the game
      Invoke("Restart", 1);  
   }
